@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Magentodesarrollo_Fintonic>
+            <version>1.0.0</version>
+        </Magentodesarrollo_Fintonic>
+    </modules>
+    <global>
+        <models>
+            <fintonic>
+                <class>Magentodesarrollo_Fintonic_Model</class>
+            </fintonic>
+        </models>
+        <blocks>
+            <fintonic>
+                <class>Magentodesarrollo_Fintonic_Block</class>
+            </fintonic>
+            <checkout>
+                <rewrite>
+                    <onepage_billing>Magentodesarrollo_Fintonic_Block_Checkout_Onepage_Billing</onepage_billing>
+                    <onepage_shipping>Magentodesarrollo_Fintonic_Block_Checkout_Onepage_Shipping</onepage_shipping>
+                </rewrite>
+            </checkout>
+        </blocks>
+        <helpers>
+            <fintonic>
+                <class>Magentodesarrollo_Fintonic_Helper</class>
+            </fintonic>
+        </helpers>
+    </global>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Magentodesarrollo_Fintonic after="Mage_Adminhtml">Magentodesarrollo_Fintonic_AdminHtml</Magentodesarrollo_Fintonic>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <fintonic>
+                    <file>fintonic.xml</file>
+                </fintonic>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <Magentodesarrollo_Fintonic>
+                    <files>
+                        <default>Magentodesarrollo_Fintonic.csv</default>
+                    </files>
+                </Magentodesarrollo_Fintonic>
+            </modules>
+        </translate>
+    </adminhtml>
+
+    <frontend>
+        <routers>
+            <fintonic>
+                <use>standard</use>
+                <args>
+                    <module>Magentodesarrollo_Fintonic</module>
+                    <frontName>fintonic</frontName>
+                </args>
+            </fintonic>
+        </routers>
+
+        <layout>
+            <updates>
+                <fintonic>
+                    <file>fintonic.xml</file>
+                </fintonic>
+            </updates>
+        </layout>
+
+    </frontend>
+    <default>
+        <payment>
+            <fintonic>
+                <active>0</active>
+                <sandbox>1</sandbox>
+                <model>fintonic/payment</model>
+                <title>Fintonic</title>
+                <pass backend_model="adminhtml/system_config_backend_encrypted"/>
+                <sort_order>1</sort_order>
+            </fintonic>
+        </payment>
+    </default>
+
+</config>

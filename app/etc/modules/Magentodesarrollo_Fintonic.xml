@@ -1,0 +1,11 @@
+<config>
+	<modules>
+		<Magentodesarrollo_Fintonic>
+			<active>true</active>
+			<codePool>community</codePool>
+			<depends>
+				<Mage_Payment/>
+			</depends>
+		</Magentodesarrollo_Fintonic>
+	</modules>
+</config>

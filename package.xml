@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Fintonic</name>
+    <version>1.0.0</version>
+    <stability>alpha</stability>
+    <license>GPL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Payment Fintonic module.</summary>
+    <description>Fintonic module developed by MagentoDesarrollo</description>
+    <notes>Fintonic module developed by MagentoDesarrollo</notes>
+    <authors><author><name>Carlos</name><user>MAG002668422</user><email>carlos@magentodesarrollo.com</email></author></authors>
+    <date>2016-12-21</date>
+    <time>21:45:04</time>
+    <contents><target name="magecommunity"><dir name="Magentodesarrollo"><dir name="Fintonic"><dir name="Block"><dir name="Checkout"><dir name="Onepage"><file name="Billing.php" hash="0d00578cdd5281df2b6556f0606a4286"/><file name="Shipping.php" hash="9100c01e7fa553133b49daedc0958e9d"/></dir></dir><dir name="Payment"><file name="Cancel.php" hash="def92cfca60bed9ed29ffde9418b24eb"/><file name="Form.php" hash="d25e59537cc73502fd8b6d4368479c05"/><file name="Info.php" hash="623b18e04bdf9419c93af84d6aeccfd0"/><file name="Qrcode.php" hash="75dcdfe3eeaabc5e8e5d68fc0b1d637a"/><file name="Redirect.php" hash="602d10e986f9062d4dcc6410e579c442"/></dir></dir><dir name="Helper"><file name="Cart.php" hash="f713d683ed2ca3789674e777d610c5f2"/><file name="Data.php" hash="417bb6699018a4d1254860fad91feaa4"/></dir><dir name="Model"><file name="Config.php" hash="4dab4eff9f2485994c9ecaafe99c41c3"/><file name="Observer.php" hash="d7531a6aac71fb90b8c330445f22aa37"/><file name="Payment.php" hash="acd3683d63daf1d959f6eb5ff6b647eb"/></dir><dir name="controllers"><file name="PaymentController.php" hash="ec34e6d0e3a81b9b7e8028d2c485b377"/></dir><dir name="etc"><file name="config.xml" hash="527aabcb1d5bcf7eaad1261baeef089e"/><file name="system.xml" hash="37a47a418d1b7a409d7c6cae5a8ae7d7"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Magentodesarrollo_Fintonic.xml" hash="e5aef1a880ec4d08c1a50c6a30c6292b"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="template"><dir name="fintonic"><dir name="payment"><file name="form.phtml" hash="77adba3491becd4afaf2ae82ec091cc4"/></dir></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.5.0</min><max>8.0.0</max></php></required></dependencies>
+</package>
